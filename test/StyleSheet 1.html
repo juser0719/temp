@@ -7,21 +7,27 @@
     
     div.head {background-color: green; color: ivory; margin-bottom: 30px; padding-left :15px;}
     
-    li .first {background-color:seagreen;  color: rgb(40, 66, 54);
-
-                 text-align: center;
-                 text-decoration: none;
-                 display: inline-block;  }
-    ul li a:link { background-color: lightgrey;  color: rgb(40, 66, 54);
+    
+    ul li a:link, a:visited { background-color: lightgrey;  color: rgb(40, 66, 54);
                  padding: 5px 10px;
                  margin-bottom: 5px;
                  text-align: center;
                  text-decoration: none;
                  display: inline-block;}
-    ul li a:visited { background-color: blue;color: red;}
+    /*ul li a:visited { background-color: lightgray;color:rgb(40,66,54);}*/
     ul li a:hover { background-color: cyan; }
     ul li a:active { background-color: green; }
     ul {list-style-type: none;}
+     
+    table  {border-collapse: collapse; width : 100%;}
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    th {background-color: #4CAF50; color: white;}
+    tr:hover {background-color: yellowgreen}
+    .first {background-color: green;}
+    .side {background-color: steelblue; color: white; margin-top: 10px;padding-top: 10px}
+    div .side-title ,.side-info {padding-left: 10px;}
+    .news {background-color: lightgray; padding: 5px;}
+
     </style>
 </head>
 
@@ -30,13 +36,15 @@
     <h1 style="margin-bottom: -5px">Welcome to my<a href = "test.html" style="color: black">Homepage</a></h1>
     <p style="margin-top: 0; padding-bottom: 10px"><small>Use the menue to select different Stylesheets</small></p>
     </div>
-    <ul>
-        <li class = "first"><strong><a href ="StyleSheet 1.html">StyleSheet 1</a></strong></li>
+    <div >
+     <ul >
+        <li ><strong><a href ="StyleSheet 1.html" class = "first">StyleSheet 1</a></strong></li>
         <li><strong><a href ="StyleSheet 2.html">StyleSheet 2</a></strong></li>
         <li><strong><a href ="StyleSheet 3.html">StyleSheet 3</a></strong></li>
         <li><strong><a href ="StyleSheet 4.html">StyleSheet 4</a></strong></li>
         <li><strong><a href ="noStyleSheet.html">No StyleSheet</a></strong></li>
-    </ul>
+     </ul>
+    </div>
     <h1>Same Page Different Stylesheet</h1>
     <p>우리 정부가 세계무역기구, WTO 상품무역 이사회에서 일본의 경제 보복 조치에 대해 처음으로 공식 문제 제기를 했습니다.
         정부는 일본의 부당한 수출 규제를 국제사회에 알리는 한편 빠른 철회를 강력히 요구했습니다.     
@@ -91,6 +99,19 @@
         </tr>
     </tbody>
 </table>
+<div class = "side">
+    <strong class = "side-title">Side-bar</strong>
+    <p class = "side-info">President Donald Trump will no longer pursue adding a question on citizenship to the 2020 US census questionnaire.<br><br></p>
+</div>
+<div class = "news">
+    <p ><small class = "news-info">Instead, he said he had directed officials to obtain the information through an executive order for government agencies, as court challenges would have delayed a census.
+
+        "We will leave no stone unturned," Mr Trump said.
+        
+        The retreat follows a long fight over the inclusion of the question, which the Supreme Court had blocked in June.
+        
+        "We are not backing down on our effort to determine the citizenship status of the United States population," the US president said.</small></p>
+</div>
 </body>
 
 </html>
